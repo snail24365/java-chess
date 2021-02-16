@@ -2,15 +2,12 @@ package game;
 
 import action.Action;
 import action.InvalidActionException;
-import rule.Validator;
 
 public class GameModel {
 	
-	private Validator validator;
 	private State state;
 	
 	public GameModel() {
-		validator = new Validator();
 		state = new State();
 	}
 	
