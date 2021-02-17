@@ -66,20 +66,6 @@ action
   >> pos1에 진짜 그 말이 있는지 알아야한다.
   >> pos2에 있는게 자기 말인지. 상대방말인지. 보드밖인지. piece의 권한 밖인지.
 
-try {
-	game.doAction(action);
-} catch (InvalidActionException) {
-	
-}
-
-
-doAction -> board내부적으로 next state
-
-for(Validation validation: validations) {
-	if(validation.check(state, action)) {
-	
-	}
-}
 
 
 
