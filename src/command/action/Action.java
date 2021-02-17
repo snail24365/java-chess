@@ -1,5 +1,6 @@
-package action;
+package command.action;
 
+import command.InvalidActionException;
 import game.Result;
 import game.State;
 

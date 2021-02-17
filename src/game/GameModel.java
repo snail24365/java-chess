@@ -1,7 +1,7 @@
 package game;
 
-import action.Action;
-import action.InvalidActionException;
+import command.InvalidActionException;
+import command.action.Action;
 
 public class GameModel {
 	
