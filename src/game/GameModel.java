@@ -13,7 +13,7 @@ public class GameModel {
 	
 	public Result doAction(Action action) throws InvalidActionException {
 		try {
-			action.validateAction(state);
+			action.throwIfInvalid(state);
 		} catch (InvalidActionException e) {
 			throw e;
 		}

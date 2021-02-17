@@ -1,11 +1,11 @@
 package command;
 
-public class Positon {
+public class Position {
 	
 	public int row;
 	public int col;
 
-	public Positon(String positionString) {
+	public Position(String positionString) {
 		/*
 		 * 생성 제약조건 :
 		 * positionString은 a3,d4,h7과 같이 알파벳 a~h와 숫자1~8로 좌표를 명시 해줘야 한다.

@@ -7,7 +7,7 @@ import game.State;
 public class PromotionAction implements Action{
 
 	@Override
-	public void validateAction(State state) throws InvalidActionException {
+	public void throwIfInvalid(State state) throws InvalidActionException {
 		// TODO Auto-generated method stub
 		
 	}
