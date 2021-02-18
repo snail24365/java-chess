@@ -1,6 +1,9 @@
 package piece;
 
-import basic.Position;
+import java.util.List;
+import java.util.stream.Collectors;
+
+import position.Position;
 
 public abstract class Piece {
 	private Position position;
@@ -15,8 +18,14 @@ public abstract class Piece {
 	public void setPosition(Position position) {
 		this.position = position;
 	}
-}
-
-enum Player {
-	WHITE, BLACK
+	
+	public boolean isAt(Position position) {
+		return this.position.equals(position);
+	}
+	
+	public abstract List<Position> getPossibleMove(); 
+	
+	protected List<Position> filterBoundedPosition(List<Position> positions) {
+		return positions.stream().filter(p -> p.isInBound()).collect(Collectors.toList());
+	}
 }

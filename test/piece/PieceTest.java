@@ -1,17 +1,13 @@
-package basic;
+package piece;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-import piece.Piece;
-
 class PieceTest {
 
-	Piece piece;
-	
 	@Test
-	void testChangePosition() {
+	void test() {
 		fail("Not yet implemented");
 	}
 

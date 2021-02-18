@@ -1,14 +1,19 @@
-package basic;
+package position;
 
 public class Position {
+	public final static int EDGE_LEFT = 0;
+	public final static int EDGE_RIGHT = 7;
+	
 	private int row;
 	private int col;
 	
-	public Position(String declarePhase) {
-		// TODO declarePhase 검증해주는 코드 작성하기
-		declarePhase = declarePhase.toLowerCase();
-		row = declarePhase.charAt(0) - 'a';
-		col = declarePhase.charAt(1) - '1';
+	public Position(int row, int col) {
+		this.row = row;
+		this.col = col;
+	}
+	
+	public boolean isInBound() {
+		return row <= EDGE_RIGHT || row >= EDGE_LEFT || col <= EDGE_RIGHT || col >= EDGE_LEFT;
 	}
 	
 	@Override
