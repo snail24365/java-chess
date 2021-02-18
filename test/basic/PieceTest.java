@@ -4,12 +4,14 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
+import piece.Piece;
+
 class PieceTest {
 
 	Piece piece;
 	
 	@Test
-	void test() {
+	void testChangePosition() {
 		fail("Not yet implemented");
 	}
 
