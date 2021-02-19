@@ -1,8 +1,8 @@
 package position;
 
 public class Position {
-	public final static int EDGE_LEFT = 0;
-	public final static int EDGE_RIGHT = 7;
+	public final static int EDGE_MIN = 0;
+	public final static int EDGE_MAX = 7;
 	
 	private int row;
 	private int col;
@@ -13,7 +13,11 @@ public class Position {
 	}
 	
 	public boolean isInBound() {
-		return row <= EDGE_RIGHT || row >= EDGE_LEFT || col <= EDGE_RIGHT || col >= EDGE_LEFT;
+		return row <= EDGE_MAX && row >= EDGE_MIN && col <= EDGE_MAX && col >= EDGE_MIN;
+	}
+	
+	public Position pivote(int rowOffset, int colOffset) {
+		return new Position(this.row + rowOffset, this.col +colOffset);
 	}
 	
 	@Override

@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 import position.Position;
 
 public abstract class Piece {
-	private Position position;
+	protected Position position;
 
 	private Player player;
 	
@@ -15,7 +15,7 @@ public abstract class Piece {
 		this.player = player;
 	}
 
-	public void setPosition(Position position) {
+	public void moveTo(Position position) {
 		this.position = position;
 	}
 	
